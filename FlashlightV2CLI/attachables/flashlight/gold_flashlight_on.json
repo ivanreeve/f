@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "foxstudio:gold_flashlight_on",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "flashlight_bloom": "entity_beam_additive"
+      },
+      "textures": {
+        "default": "textures/flashlight/gold_flashlight"
+      },
+      "geometry": {
+        "default": "geometry.foxstudio.flashlight_on"
+      },
+      "animations": {
+        "fp_mainhand": "animation.foxstudio.wield_first_person_mainhand",
+        "fp_offhand": "animation.foxstudio.wield_first_person_offhand",
+        "tp": "animation.foxstudio.wield_third_person"
+      },
+      "scripts": {
+        "animate": [
+          {"fp_mainhand": "c.item_slot == 'main_hand' && c.is_first_person"},
+          {"fp_offhand": "c.item_slot == 'off_hand' && c.is_first_person"},
+          {"tp": "!c.is_first_person"}
+        ]
+      },
+      "render_controllers": [ "controller.render.flashlight_on"]
+    }
+  }
+}

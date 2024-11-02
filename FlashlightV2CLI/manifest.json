@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Official release by Fox Studio.\n§7August 2023",
+        "name": "§eFlashlight V2 [CLIENT]",
+        "uuid": "f037bea5-f759-4aec-954e-149929e609e4",
+        "version": [2, 0, 0],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "modules",
+            "type": "resources",
+            "uuid": "f034cea5-f859-4aec-954e-149929e609e3",
+            "version": [2, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "f046fea5-f759-4aec-954e-149929e609e3",//header uuid [DATA]
+            "version": [2, 0, 0]
+        }
+    ]
+}

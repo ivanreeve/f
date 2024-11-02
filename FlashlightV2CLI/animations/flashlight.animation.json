@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.foxstudio.wield_first_person_mainhand": {
+			"loop": true,
+			"bones": {
+				"flashlight_body": {
+					"rotation": [99, 58, -20],
+					"position": [-3, 28, -3]
+				},
+				"flashlight_bloom": {
+					"rotation": [99, 58, -20],
+					"position": [-3, 28, -3]
+				}
+			}
+		},
+		"animation.foxstudio.wield_first_person_offhand": {
+			"loop": true,
+			"bones": {
+				"flashlight_body": {
+					"rotation": [-10, 170, 0],
+					"position": [-14, 27, 11]
+				},
+				"flashlight_bloom": {
+					"rotation": [-10, 170, 0],
+					"position": [-14, 27, 11]
+				}
+			}
+		},
+		"animation.foxstudio.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"flashlight_body": {
+					"rotation": [0, 0, 0],
+					"position": ["(c.item_slot == 'main_hand') * 0.5", 20, -3],
+					"scale": 0.65
+				},
+				"flashlight_bloom": {
+					"rotation": [0, 0, 0],
+					"position": ["(c.item_slot == 'main_hand') * 0.5", 20, -3],
+					"scale": 0.65
+				}
+			}
+		}
+	}
+}

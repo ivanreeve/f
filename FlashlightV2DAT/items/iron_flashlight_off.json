@@ -1,0 +1,38 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "foxstudio:iron_flashlight_off",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true,
+			"minecraft:icon": {
+				"texture": "foxstudio:iron_flashlight_off"
+			},
+			"minecraft:display_name": {
+				"value": "Flashlight \n§7OFF"
+			},
+			"minecraft:cooldown": {
+				"category": "flashlight",
+				"duration": 1.0
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "flashlight_on"
+				}
+			}
+		},
+		"events": {
+			"flashlight_on": {
+				"run_command": {//transform this to flashlight_on
+					"command": [
+						"replaceitem entity @s slot.weapon.mainhand 0 foxstudio:iron_flashlight_on",
+						"playsound flashlight.flick"
+					]
+				}
+			}
+		}
+	}
+}

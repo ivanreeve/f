@@ -1,0 +1,71 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "foxstudio:photon",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"runtime_identifier": "minecraft:snowball",
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:timer": {
+				"looping": false,
+        "time": [0.0,0.0],
+        "time_down_event": {
+          "event": "place_lightblock"
+        }
+      },
+		  "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+			"minecraft:scale": {
+				"value": 0
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:conditional_bandwidth_optimization":{}
+		},
+		"events": {
+			"remove": {
+        "add": {
+          "component_groups": [
+          	"despawn"
+          ]
+        }
+			},
+			"remove_delay": {
+	      "run_command": {
+          "command": [
+           	"fill ~~~ ~~~ air [] replace light_block [\"block_light_level\":7]",
+          	"event entity @s remove"
+          ]
+	      }
+			},
+			"place_lightblock": {
+	      "run_command": {
+          "command": [
+          	"setblock ~~~ light_block [\"block_light_level\":7] keep",
+          	"event entity @s remove_delay"
+          ]
+	      }
+			}
+		}
+	}
+}

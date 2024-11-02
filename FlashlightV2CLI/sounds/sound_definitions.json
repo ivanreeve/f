@@ -1,0 +1,11 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions" : {
+			"flashlight.flick" : {
+			   "category" : "neutral",
+			   "sounds" : [
+			      "sounds/flashlight_flick"
+			   ]
+			}
+   }
+}

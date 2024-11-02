@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "foxstudio:iron_flashlight_off",
+      "materials": {
+        "default": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/flashlight/iron_flashlight"
+      },
+      "geometry": {
+        "default": "geometry.foxstudio.flashlight_off"
+      },
+      "animations": {
+        "fp_mainhand": "animation.foxstudio.wield_first_person_mainhand",
+        "fp_offhand": "animation.foxstudio.wield_first_person_offhand",
+        "tp": "animation.foxstudio.wield_third_person"
+      },
+      "scripts": {
+        "animate": [
+          {"fp_mainhand": "c.item_slot == 'main_hand' && c.is_first_person"},
+          {"fp_offhand": "c.item_slot == 'off_hand' && c.is_first_person"},
+          {"tp": "!c.is_first_person"}
+        ]
+      },
+      "render_controllers": [ "controller.render.flashlight_off" ]
+    }
+  }
+}

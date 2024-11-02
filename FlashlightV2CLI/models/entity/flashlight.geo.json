@@ -1,0 +1,136 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.foxstudio.flashlight_off",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "flashlight_body",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-2, 1, -3],
+							"size": [3, 3, 9],
+							"uv": {
+								"east": {"uv": [20, 0], "uv_size": [-9, 3]},
+								"south": {"uv": [3, 10], "uv_size": [3, 3]},
+								"west": {"uv": [11, 3], "uv_size": [9, -3]},
+								"up": {"uv": [0, 10], "uv_size": [3, 9]},
+								"down": {"uv": [0, 19], "uv_size": [3, -9]}
+							}
+						},
+						{
+							"origin": [-3, 0, -9],
+							"size": [5, 5, 6],
+							"uv": {
+								"north": {"uv": [8, 13], "uv_size": [5, 5]},
+								"east": {"uv": [0, 0], "uv_size": [6, 5]},
+								"south": {"uv": [3, 13], "uv_size": [5, 5]},
+								"west": {"uv": [0, 0], "uv_size": [6, 5]},
+								"up": {"uv": [6, 0], "uv_size": [5, 6]},
+								"down": {"uv": [6, 6], "uv_size": [5, -6]}
+							}
+						},
+						{//switch
+							"origin": [-1, 3.5, 0],
+							"size": [1, 1, 2],
+							"uv": {
+								"north": {"uv": [15, 3], "uv_size": [1, 1]},
+								"east": {"uv": [15, 3], "uv_size": [2, 1]},
+								"south": {"uv": [15, 3], "uv_size": [1, 1]},
+								"west": {"uv": [15, 3], "uv_size": [2, 1]},
+								"up": {"uv": [21, 10], "uv_size": [-4, -7]}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.foxstudio.flashlight_on",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "flashlight_body",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-2, 1, -3],
+							"size": [3, 3, 9],
+							"uv": {
+								"east": {"uv": [20, 0], "uv_size": [-9, 3]},
+								"south": {"uv": [3, 10], "uv_size": [3, 3]},
+								"west": {"uv": [11, 3], "uv_size": [9, -3]},
+								"up": {"uv": [0, 10], "uv_size": [3, 9]},
+								"down": {"uv": [0, 19], "uv_size": [3, -9]}
+							}
+						},
+						{
+							"origin": [-3, 0, -9],
+							"size": [5, 5, 6],
+							"uv": {
+								"north": {"uv": [0, 5], "uv_size": [5, 5]},
+								"east": {"uv": [0, 0], "uv_size": [6, 5]},
+								"south": {"uv": [3, 13], "uv_size": [5, 5]},
+								"west": {"uv": [0, 0], "uv_size": [6, 5]},
+								"up": {"uv": [6, 0], "uv_size": [5, 6]},
+								"down": {"uv": [6, 6], "uv_size": [5, -6]}
+							}
+						},
+						{ //switch
+							"origin": [-1, 3.5, 0],
+							"size": [1, 1, 2],
+							"uv": {
+								"north": {"uv": [15, 3], "uv_size": [1, 1]},
+								"east": {"uv": [15, 3], "uv_size": [2, 1]},
+								"south": {"uv": [15, 3], "uv_size": [1, 1]},
+								"west": {"uv": [15, 3], "uv_size": [2, 1]},
+								"up": {"uv": [21, 10], "uv_size": [-4, -7]}
+							}
+						}
+					]
+				},
+				{
+					"name": "flashlight_bloom",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [-3, 0, -16],
+							"size": [5, 5, 7],
+							"uv": {
+								"up": {"uv": [15, 3], "uv_size": [-4, 7]},
+								"down": {"uv": [15, 10], "uv_size": [-4, -7]}
+							}
+						},
+						{
+							"origin": [-3, 0, -16],
+							"size": [5, 5, 7],
+							"pivot": [-0.5, 2.5, -12.5],
+							"rotation": [0, 0, 90],
+							"uv": {
+								"up": {"uv": [15, 3], "uv_size": [-4, 7]},
+								"down": {"uv": [15, 10], "uv_size": [-4, -7]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

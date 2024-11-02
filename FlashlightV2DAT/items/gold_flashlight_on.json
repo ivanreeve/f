@@ -1,0 +1,38 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "foxstudio:gold_flashlight_on",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true,
+			"minecraft:icon": {
+				"texture": "foxstudio:gold_flashlight_on"
+			},
+			"minecraft:display_name": {
+				"value": "Flashlight \n§eON"
+			},
+			"minecraft:cooldown": {
+				"category": "flashlight",
+				"duration": 1.0
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "flashlight_off"
+				}
+			}
+		},
+		"events": {
+			"flashlight_off": {
+				"run_command": {//transform this to flashlight_off
+					"command": [
+						"replaceitem entity @s slot.weapon.mainhand 0 foxstudio:gold_flashlight_off",
+						"playsound flashlight.flick"
+					]
+				}
+			}
+		}
+	}
+}

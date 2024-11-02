@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.flashlight_off": {
+      "geometry": "geometry.default",
+      "materials": [ 
+      	{ "*": "material.default" }
+    	],
+      "textures": [ "texture.default"]
+    },
+    "controller.render.flashlight_on": {
+      "geometry": "geometry.default",
+      "materials": [ 
+      	{ "*": "material.default" },
+      	{ "flashlight_bloom": "material.flashlight_bloom" }
+    	],
+      "textures": [ "texture.default"]
+    }
+  }
+}

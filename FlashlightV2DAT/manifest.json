@@ -1,0 +1,36 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Official release by Fox Studio.\n§7August 2023",
+    "name": "§bFlashlight V2 [DATA]",
+    "uuid": "f046fea5-f759-4aec-954e-149929e609e3",
+    "version": [
+      2,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "description": "modules",
+      "type": "data",
+      "uuid": "f136cea5-f759-4aec-953e-149929e609e3",
+      "version": [
+        2,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+        {
+            "uuid": "f037bea5-f759-4aec-954e-149929e609e4",//header uuid [CLIENT]
+            "version": [2, 0, 0]
+        }
+    ]
+}
